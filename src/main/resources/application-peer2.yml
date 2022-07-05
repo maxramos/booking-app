@@ -1,0 +1,9 @@
+# Set port for booking-app peer2.
+server:
+  port: 9081
+
+# Register self as a client to discovery server.
+eureka:
+  client:
+    service-url:
+      defaultZone: http://peer1:8761/eureka/,http://peer2:8762/eureka/
