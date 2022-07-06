@@ -2,6 +2,13 @@
 server:
   port: 9080
 
+# Exposes the /refresh endpoint used for refreshing configurations.
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+
 # Register self as a client to service-registry.
 eureka:
   client:
